@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vaultera Architecture — A modern architecture firm crafting residential, commercial, and sustainable spaces that define the future of design.">
+  <title>Vaultera Architecture — Designing Spaces. Defining Futures.</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="#hero" class="logo" aria-label="Vaultera Architecture — Home">
+        <span class="logo-icon">
+          <!-- Minimal architectural logo — stylized building/arch -->
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 32V14L18 4L32 14V32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 32V22H22V32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="18" y1="4" x2="18" y2="10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        Vaultera
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/images/hero-bg.png"
+             alt="Modern architectural building with clean geometric lines at golden hour"
+             width="1920" height="1080"
+             fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1>Designing Spaces.<br><em>Defining Futures.</em></h1>
+        <p class="hero-description">
+          We craft architecture that harmonizes bold vision with purposeful design — creating spaces where people, light, and landscape converge.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Explore Our Projects</a>
+          <a href="#contact" class="btn btn-secondary">Start a Project</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <img src="assets/images/about-firm.png"
+                 alt="Architects collaborating in a bright, modern studio with building models"
+                 loading="lazy"
+                 width="800" height="600">
+          </div>
+
+          <div class="about-text reveal">
+            <span class="section-label">About the Firm</span>
+            <h2 class="section-title">Shaping the Built Environment Since 2003</h2>
+            <p>
+              Vaultera Architecture is a design-led practice dedicated to creating meaningful spaces. We believe that great architecture starts with understanding people — how they live, work, and connect with the world around them.
+            </p>
+            <p>
+              Our multidisciplinary team blends innovation with craftsmanship, drawing on decades of collective experience in residential, commercial, and sustainable design. Every project begins with a conversation and ends with a space that tells a story.
+            </p>
+
+            <div class="about-principles">
+              <span class="principle-tag">Human-Centered Design</span>
+              <span class="principle-tag">Sustainable Practice</span>
+              <span class="principle-tag">Material Innovation</span>
+              <span class="principle-tag">Contextual Sensitivity</span>
+            </div>
+
+            <a href="#philosophy" class="btn btn-outline">Our Approach</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="projects section-padding" id="projects">
+      <div class="container">
+        <div class="projects-header reveal">
+          <span class="section-label">Featured Work</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">A curated selection of residential, commercial, and sustainable designs.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar reveal" role="toolbar" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="residential" aria-pressed="false">Residential</button>
+          <button class="filter-btn" data-filter="commercial" aria-pressed="false">Commercial</button>
+          <button class="filter-btn" data-filter="sustainable" aria-pressed="false">Sustainable</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid reveal-children" id="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card" data-category="residential" tabindex="0" role="button"
+                   aria-label="View details for The Horizon Residence"
+                   data-title="The Horizon Residence"
+                   data-desc="A luxury hillside home designed to dissolve the boundary between interior living and the surrounding landscape. Floor-to-ceiling glazing, natural stone, and cantilevered terraces create a seamless dialogue with the terrain."
+                   data-year="2023"
+                   data-location="Pacific Palisades, CA"
+                   data-area="6,200 sq ft"
+                   data-status="Completed">
+            <div class="project-card-image">
+              <img src="assets/images/project-residential-1.png"
+                   alt="Luxurious modern residence with glass walls and infinity pool"
+                   loading="lazy" width="720" height="450">
+              <div class="project-card-overlay" aria-hidden="true"><span>View Project</span></div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-category">Residential</span>
+              <h3>The Horizon Residence</h3>
+              <p>Luxury hillside home blending interior space with natural landscape through floor-to-ceiling glazing and cantilevered terraces.</p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="commercial" tabindex="0" role="button"
+                   aria-label="View details for Vertex Tower"
+                   data-title="Vertex Tower"
+                   data-desc="A 32-storey commercial tower in the financial district. The faceted glass curtain wall creates dynamic reflections throughout the day, while the lobbies and sky garden bring nature into the vertical workplace."
+                   data-year="2022"
+                   data-location="Chicago, IL"
+                   data-area="480,000 sq ft"
+                   data-status="Completed">
+            <div class="project-card-image">
+              <img src="assets/images/project-commercial-1.png"
+                   alt="Modern commercial office tower with dramatic glass curtain wall at dusk"
+                   loading="lazy" width="720" height="450">
+              <div class="project-card-overlay" aria-hidden="true"><span>View Project</span></div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-category">Commercial</span>
+              <h3>Vertex Tower</h3>
+              <p>A 32-storey commercial landmark featuring a faceted glass envelope that animates the city skyline throughout the day.</p>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="sustainable" tabindex="0" role="button"
+                   aria-label="View details for The Green Canopy Center"
+                   data-title="The Green Canopy Center"
+                   data-desc="An award-winning community center built with cross-laminated timber and passive solar strategies. Living walls, rainwater harvesting, and a green roof achieve near-zero energy performance while fostering community gathering."
+                   data-year="2024"
+                   data-location="Portland, OR"
+                   data-area="18,000 sq ft"
+                   data-status="Completed">
+            <div class="project-card-image">
+              <img src="assets/images/project-sustainable-1.png"
+                   alt="Eco-friendly building with green living walls and integrated solar panels"
+                   loading="lazy" width="720" height="450">
+              <div class="project-card-overlay" aria-hidden="true"><span>View Project</span></div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-category">Sustainable</span>
+              <h3>The Green Canopy Center</h3>
+              <p>A net-zero community hub crafted from cross-laminated timber, living walls, and passive solar strategies.</p>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="residential" tabindex="0" role="button"
+                   aria-label="View details for Courtyard House"
+                   data-title="Courtyard House"
+                   data-desc="Inspired by traditional courtyard typologies, this family residence wraps private living spaces around a central garden. Natural ventilation, exposed timber framing, and rammed-earth walls anchor the home in its site."
+                   data-year="2023"
+                   data-location="Austin, TX"
+                   data-area="4,800 sq ft"
+                   data-status="Completed">
+            <div class="project-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=720&h=450&fit=crop&q=80"
+                   alt="Contemporary courtyard house with exposed timber and central garden"
+                   loading="lazy" width="720" height="450">
+              <div class="project-card-overlay" aria-hidden="true"><span>View Project</span></div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-category">Residential</span>
+              <h3>Courtyard House</h3>
+              <p>A family home organized around a central garden, using rammed-earth walls and exposed timber to connect with the land.</p>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="commercial" tabindex="0" role="button"
+                   aria-label="View details for The Meridian Cultural Center"
+                   data-title="The Meridian Cultural Center"
+                   data-desc="A civic landmark for the arts, featuring flowing concrete forms and vast glazed galleries. The building's organic silhouette has become an icon of the city's cultural renaissance."
+                   data-year="2021"
+                   data-location="Denver, CO"
+                   data-area="95,000 sq ft"
+                   data-status="Completed">
+            <div class="project-card-image">
+              <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=720&h=450&fit=crop&q=80"
+                   alt="Sweeping cultural center with flowing concrete and glass galleries"
+                   loading="lazy" width="720" height="450">
+              <div class="project-card-overlay" aria-hidden="true"><span>View Project</span></div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-category">Commercial</span>
+              <h3>The Meridian Cultural Center</h3>
+              <p>A civic arts landmark whose organic concrete silhouette has become an icon of the city's cultural renaissance.</p>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card" data-category="sustainable" tabindex="0" role="button"
+                   aria-label="View details for EcoVilla Retreat"
+                   data-title="EcoVilla Retreat"
+                   data-desc="A boutique hospitality project comprising twelve timber-and-stone villas set within a regenerated forest. Off-grid power, composting systems, and bioclimatic design deliver luxury without ecological compromise."
+                   data-year="2024"
+                   data-location="Asheville, NC"
+                   data-area="32,000 sq ft"
+                   data-status="In Progress">
+            <div class="project-card-image">
+              <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=720&h=450&fit=crop&q=80"
+                   alt="Timber and stone eco-retreat villa nestled in a regenerated forest"
+                   loading="lazy" width="720" height="450">
+              <div class="project-card-overlay" aria-hidden="true"><span>View Project</span></div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-category">Sustainable</span>
+              <h3>EcoVilla Retreat</h3>
+              <p>Twelve off-grid timber villas within a regenerated forest, delivering luxury hospitality without ecological compromise.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section-padding" id="services">
+      <div class="container">
+        <div class="services-header reveal">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">End-to-end architectural expertise, from concept to completion.</p>
+        </div>
+
+        <div class="services-grid reveal-children">
+
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- House icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Residential Architecture</h3>
+            <p>Custom homes, multi-family housing, and estate design. We create living environments that reflect each client's lifestyle, aspirations, and relationship with their site.</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- Building icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                <line x1="9" y1="6" x2="9" y2="6.01"/>
+                <line x1="15" y1="6" x2="15" y2="6.01"/>
+                <line x1="9" y1="10" x2="9" y2="10.01"/>
+                <line x1="15" y1="10" x2="15" y2="10.01"/>
+                <line x1="9" y1="14" x2="9" y2="14.01"/>
+                <line x1="15" y1="14" x2="15" y2="14.01"/>
+                <path d="M9 22v-4h6v4"/>
+              </svg>
+            </div>
+            <h3>Commercial Architecture</h3>
+            <p>Offices, retail, hospitality, and mixed-use developments. We design workplaces and public spaces that elevate brand identity and support productivity.</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- Interior icon (layers) -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3>Interior Design</h3>
+            <p>Material selection, furniture layouts, lighting design, and spatial planning. Our interiors complement the architecture while ensuring comfort and beauty.</p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- Leaf icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75"/>
+              </svg>
+            </div>
+            <h3>Sustainable Design</h3>
+            <p>Net-zero strategies, passive house design, green certifications, and bioclimatic analysis. We embed environmental responsibility into every decision.</p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- Tool icon (wrench) -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3>Renovation &amp; Remodeling</h3>
+            <p>Adaptive reuse, historic preservation, and modern upgrades. We breathe new life into existing structures while honoring their character and potential.</p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- Compass icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+              </svg>
+            </div>
+            <h3>Architectural Consultation</h3>
+            <p>Feasibility studies, site analysis, zoning guidance, and design reviews. Expert advice at any stage — from land acquisition to construction oversight.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DESIGN PHILOSOPHY ==================== -->
+    <section class="philosophy section-padding" id="philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-text reveal">
+            <span class="section-label">Design Philosophy</span>
+            <h2 class="section-title">Architecture With Intention</h2>
+            <p>
+              We believe every building should serve its occupants as beautifully as it serves its environment. Our work is guided by a commitment to purposeful design — where form follows meaning, materials speak honestly, and spaces foster well-being.
+            </p>
+
+            <div class="philosophy-pillars">
+              <div class="pillar">
+                <div class="pillar-number" aria-hidden="true">01</div>
+                <h4>Functionality</h4>
+                <p>Spaces that work intuitively for the people who inhabit them.</p>
+              </div>
+              <div class="pillar">
+                <div class="pillar-number" aria-hidden="true">02</div>
+                <h4>Aesthetics</h4>
+                <p>Beauty rooted in proportion, materiality, and light.</p>
+              </div>
+              <div class="pillar">
+                <div class="pillar-number" aria-hidden="true">03</div>
+                <h4>Sustainability</h4>
+                <p>Designing for longevity, efficiency, and ecological respect.</p>
+              </div>
+              <div class="pillar">
+                <div class="pillar-number" aria-hidden="true">04</div>
+                <h4>Client Vision</h4>
+                <p>Deep collaboration that turns aspirations into built reality.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="philosophy-visual reveal">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=800&fit=crop&q=80"
+                 alt="Architectural model and drafting tools on a designer's desk"
+                 loading="lazy" width="600" height="800">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATISTICS ==================== -->
+    <section class="stats section-padding" id="stats">
+      <div class="container">
+        <div class="stats-grid reveal" id="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="240">0</div>
+            <div class="stat-label">Completed Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="21">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="185">0</div>
+            <div class="stat-label">Satisfied Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="34">0</div>
+            <div class="stat-label">Design Awards</div>
+          </div>
+        </div>
+        <p class="sr-only">The figures above are demonstration data for illustrative purposes.</p>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials section-padding" id="testimonials">
+      <div class="container">
+        <div class="testimonials-header reveal">
+          <span class="section-label">Client Voices</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Sample testimonials for demonstration purposes.</p>
+        </div>
+
+        <div class="carousel reveal" role="region" aria-label="Client testimonials carousel" aria-roledescription="carousel">
+
+          <div class="carousel-track" id="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 1 of 3">
+              <div class="testimonial-card">
+                <div class="testimonial-quote" aria-hidden="true">&ldquo;</div>
+                <blockquote>
+                  Vaultera transformed our vision into a home that exceeds anything we imagined. Every detail — from the morning light in the kitchen to the way the garden frames the living room — was thoughtfully designed. They didn't just build a house; they created a place where our family truly belongs.
+                </blockquote>
+                <div class="testimonial-author">
+                  <span class="testimonial-name">Sample Client — Sarah M.</span>
+                  <span class="testimonial-role">Residential Project, Pacific Palisades</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 2 of 3">
+              <div class="testimonial-card">
+                <div class="testimonial-quote" aria-hidden="true">&ldquo;</div>
+                <blockquote>
+                  Their approach to commercial design is unlike any firm we've worked with. Vaultera balanced our brand identity, employee experience, and sustainability goals into a headquarters that our whole team is proud of. The building has become a recruitment tool in itself.
+                </blockquote>
+                <div class="testimonial-author">
+                  <span class="testimonial-name">Sample Client — James T.</span>
+                  <span class="testimonial-role">Commercial Project, Chicago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 3 of 3">
+              <div class="testimonial-card">
+                <div class="testimonial-quote" aria-hidden="true">&ldquo;</div>
+                <blockquote>
+                  Working with Vaultera on our community center was a deeply collaborative experience. They listened to every stakeholder, navigated complex sustainability targets, and delivered a building that the whole neighborhood has embraced. It feels alive with purpose.
+                </blockquote>
+                <div class="testimonial-author">
+                  <span class="testimonial-name">Sample Client — Elena R.</span>
+                  <span class="testimonial-role">Sustainable Project, Portland</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">
+              &#8592;
+            </button>
+            <div class="carousel-dots" role="tablist" aria-label="Testimonial slides">
+              <button class="carousel-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Show testimonial 1"></button>
+              <button class="carousel-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Show testimonial 2"></button>
+              <button class="carousel-dot" data-slide="2" role="tab" aria-selected="false" aria-label="Show testimonial 3"></button>
+            </div>
+            <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">
+              &#8594;
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        <div class="contact-header reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Start a Conversation</h2>
+          <p class="section-subtitle">Have a project in mind? Reach out — we'd love to hear about it.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info reveal">
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Email (Placeholder)</div>
+                <div class="contact-info-value">hello@vaultera-example.com</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Phone (Placeholder)</div>
+                <div class="contact-info-value">+1 (555) 012-3456</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Location (Placeholder)</div>
+                <div class="contact-info-value">1234 Design Avenue, Suite 500<br>San Francisco, CA 94102</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="contact-info-label" style="margin-bottom:0.75rem;">Follow Us (Placeholder Links)</div>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram (placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn (placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="X / Twitter (placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook (placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" autocomplete="name" required placeholder="Your full name">
+              <div class="form-error" id="name-error" role="alert">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <div class="form-error" id="email-error" role="alert">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" required placeholder="What is this regarding?">
+              <div class="form-error" id="subject-error" role="alert">Please enter a subject.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" required placeholder="Tell us about your project or inquiry…"></textarea>
+              <div class="form-error" id="message-error" role="alert">Please enter your message.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+              Send Message (Demo)
+            </button>
+
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo" aria-label="Vaultera — Back to top">
+            <span class="logo-icon">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 32V14L18 4L32 14V32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 32V22H22V32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="18" y1="4" x2="18" y2="10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Vaultera
+          </a>
+          <p>A design-led architecture practice creating meaningful spaces for people, communities, and the environment. This is a fictional firm created for demonstration purposes.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#services">Residential</a></li>
+            <li><a href="#services">Commercial</a></li>
+            <li><a href="#services">Interior Design</a></li>
+            <li><a href="#services">Sustainable Design</a></li>
+            <li><a href="#services">Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">&#9993;</span>
+            <span>hello@vaultera-example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">&#9742;</span>
+            <span>+1 (555) 012-3456</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">&#9872;</span>
+            <span>1234 Design Avenue, Suite 500<br>San Francisco, CA 94102</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>&copy; <span id="copyright-year"></span> Vaultera Architecture. All rights reserved. (Demo Site)</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram (placeholder)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn (placeholder)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="X / Twitter (placeholder)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT MODAL ==================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-label="Project details" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close project details">&times;</button>
+      <div class="modal-image">
+        <img src="" alt="" id="modal-img" width="800" height="450">
+      </div>
+      <div class="modal-body">
+        <span class="project-category" id="modal-category"></span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <div class="modal-details">
+          <div class="modal-detail-item">
+            <div class="modal-detail-label">Year</div>
+            <div class="modal-detail-value" id="modal-year"></div>
+          </div>
+          <div class="modal-detail-item">
+            <div class="modal-detail-label">Location</div>
+            <div class="modal-detail-value" id="modal-location"></div>
+          </div>
+          <div class="modal-detail-item">
+            <div class="modal-detail-label">Area</div>
+            <div class="modal-detail-value" id="modal-area"></div>
+          </div>
+          <div class="modal-detail-item">
+            <div class="modal-detail-label">Status</div>
+            <div class="modal-detail-value" id="modal-status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
