@@ -1,0 +1,30 @@
+{
+  "name": "decodelabs-backend-api",
+  "version": "1.0.0",
+  "description": "DecodeLabs Project 2 — Student Task Management REST API built with Node.js and Express.js",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --test tests/taskApi.test.js"
+  },
+  "keywords": [
+    "decodelabs",
+    "rest-api",
+    "express",
+    "nodejs",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
